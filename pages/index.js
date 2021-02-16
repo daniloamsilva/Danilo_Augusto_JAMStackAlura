@@ -1,11 +1,21 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
 
-const Title = styled.h1`
-  font-size: 50px;
-  color: ${({ theme }) => theme.colors.primary};
-`;
+import Box from '../src/components/foundation/Box';
+import Menu from '../src/components/commons/Menu';
+import Cover from '../src/components/commons/Cover';
 
 export default function Home() {
-  return <Title>My page</Title>;
+  return (
+    <Box
+      flex="1"
+      display="flex"
+      flexWrap="wrap"
+      flexDirection="column"
+      justifyContent="space-between"
+    >
+      <Cover>
+        <Menu />
+      </Cover>
+    </Box>
+  );
 }
