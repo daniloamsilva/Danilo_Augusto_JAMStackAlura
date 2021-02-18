@@ -1,11 +1,16 @@
 import React from 'react';
 
 import Box from '../src/components/foundation/Box';
-import Menu from '../src/components/commons/Menu';
-import Cover from '../src/components/commons/Cover';
 import Grid from '../src/components/foundation/Grid';
 import Text from '../src/components/foundation/Text';
+
+import Menu from '../src/components/commons/Menu';
+import Cover from '../src/components/commons/Cover';
 import Avatar from '../src/components/commons/Avatar';
+import SectionTitle from '../src/components/commons/SectionTitle';
+
+import WrapperProjects from '../src/components/projects/WrapperProjects';
+import HighlightedCard from '../src/components/projects/HighlightedCard';
 
 export default function Home() {
   return (
@@ -65,6 +70,36 @@ export default function Home() {
           </Grid.Row>
         </Grid.Container>
       </Cover>
+
+      <WrapperProjects margin={{ md: '30px 30px' }}>
+        <SectionTitle>MEUS PROJETOS</SectionTitle>
+
+        <Grid.Container border="2px solid black" border-radius="10px">
+          <Grid.Row>
+            <Grid.Col value={{ xs: 12, sm: 12, md: 6 }}>
+              <HighlightedCard.CardImage
+                background-image='url("img/project1.png")'
+                width="100%"
+                height="100%"
+                border-radius="10px"
+              />
+            </Grid.Col>
+            <Grid.Col value={{ xs: 12, sm: 12, md: 6 }} padding="15px">
+              <HighlightedCard.CardTitle>
+                Nome do projeto
+              </HighlightedCard.CardTitle>
+              <HighlightedCard.CardText>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                vitae mollis augue, in auctor velit. Vestibulum eu consequat
+                lorem, sit amet sagittis arcu. Quisque vestibulum nulla ut metus
+                elementum convallis. Nam congue venenatis lobortis. Donec
+                gravida venenatis odio, quis luctus elit convallis ac. Integer
+                non nisi a nisi lobortis sodales. Donec id efficitur augue.
+              </HighlightedCard.CardText>
+            </Grid.Col>
+          </Grid.Row>
+        </Grid.Container>
+      </WrapperProjects>
     </Box>
   );
 }
