@@ -9,6 +9,7 @@ import Cover from '../src/components/commons/Cover';
 import Avatar from '../src/components/commons/Avatar';
 import SectionTitle from '../src/components/commons/SectionTitle';
 import Card from '../src/components/commons/Card';
+import Footer from '../src/components/commons/Footer';
 
 import WrapperProjects from '../src/components/projects/WrapperProjects';
 import HighlightedCard from '../src/components/projects/HighlightedCard';
@@ -113,6 +114,13 @@ export default function Home() {
           </Grid.Row>
         </Grid.Container>
       </WrapperProjects>
+
+      <Footer />
+
+      <script
+        src="https://kit.fontawesome.com/8a13c7bf41.js"
+        crossOrigin="anonymous"
+      />
     </Box>
   );
 }
