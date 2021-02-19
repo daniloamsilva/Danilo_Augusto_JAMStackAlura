@@ -34,18 +34,22 @@ const Container = styled.div`
   })}
 
   ${propToStyle('marginTop')}
-  ${propToStyle('border')}
-  ${propToStyle('border-radius')}
 `;
 
 const Row = styled.div`
   display: flex;
+  justify-content: space-around;
+
   flex-wrap: wrap;
   margin-right: -16px;
   margin-left: -16px;
 
+  ${propToStyle('marginTop')}
+  ${propToStyle('marginBottom')}
   ${propToStyle('paddingTop')}
   ${propToStyle('paddingBottom')}
+  ${propToStyle('border')}
+  ${propToStyle('border-radius')}
 `;
 
 const Col = styled.div`
@@ -134,7 +138,10 @@ const Col = styled.div`
   ${propToStyle('justifyContent')}
   ${propToStyle('flexDirection')}
   ${propToStyle('marginTop')}
+  ${propToStyle('marginBottom')}
   ${propToStyle('padding')}
+  ${propToStyle('border')}
+  ${propToStyle('borderRadius')}
 `;
 
 Col.defaultProps = {

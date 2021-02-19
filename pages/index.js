@@ -8,6 +8,7 @@ import Menu from '../src/components/commons/Menu';
 import Cover from '../src/components/commons/Cover';
 import Avatar from '../src/components/commons/Avatar';
 import SectionTitle from '../src/components/commons/SectionTitle';
+import Card from '../src/components/commons/Card';
 
 import WrapperProjects from '../src/components/projects/WrapperProjects';
 import HighlightedCard from '../src/components/projects/HighlightedCard';
@@ -26,14 +27,13 @@ export default function Home() {
 
         <Grid.Container>
           <Grid.Row paddingTop={30} paddingBottom={50}>
-            <Grid.Col value={{ xs: 12, md: 6 }}>
+            <Grid.Col value={{ xs: 12, md: 5 }}>
               <Avatar
                 alt="Imagem de dois celulares com telas da aplicação."
                 src="img/avatar.jpg"
               />
             </Grid.Col>
             <Grid.Col
-              offset={{ xs: 0, md: 0 }}
               value={{ xs: 12, md: 5 }}
               display={{ xs: 'block', md: 'flex' }}
               alignItems="flex-start"
@@ -74,8 +74,8 @@ export default function Home() {
       <WrapperProjects margin={{ md: '30px 30px' }}>
         <SectionTitle>MEUS PROJETOS</SectionTitle>
 
-        <Grid.Container border="2px solid black" border-radius="10px">
-          <Grid.Row>
+        <Grid.Container>
+          <Grid.Row border="2px solid black" border-radius="10px">
             <Grid.Col value={{ xs: 12, sm: 12, md: 6 }}>
               <HighlightedCard.CardImage
                 background-image='url("img/project1.png")'
@@ -96,6 +96,30 @@ export default function Home() {
                 gravida venenatis odio, quis luctus elit convallis ac. Integer
                 non nisi a nisi lobortis sodales. Donec id efficitur augue.
               </HighlightedCard.CardText>
+            </Grid.Col>
+          </Grid.Row>
+
+          <Grid.Row marginTop="30px" marginBottom="30px">
+            <Grid.Col
+              value={{ xs: 12, md: 4 }}
+              padding={{ md: '0 10px' }}
+              marginBottom={{ sm: '20px' }}
+            >
+              <Card image="img/project1.png" title="Título do projeto" />
+            </Grid.Col>
+            <Grid.Col
+              value={{ xs: 12, md: 4 }}
+              padding={{ md: '0 10px' }}
+              marginBottom={{ sm: '20px' }}
+            >
+              <Card image="img/project1.png" title="Título do projeto" />
+            </Grid.Col>
+            <Grid.Col
+              value={{ xs: 12, md: 4 }}
+              padding={{ md: '0 10px' }}
+              marginBottom={{ sm: '20px' }}
+            >
+              <Card image="img/project1.png" title="Título do projeto" />
             </Grid.Col>
           </Grid.Row>
         </Grid.Container>

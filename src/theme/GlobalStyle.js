@@ -12,6 +12,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: ${({ theme }) => theme.fontFamily};
+    background-color: #F5F5F5;
   }
 
   /* Full height layout */
