@@ -63,9 +63,11 @@ export default function Home() {
                   md: 'left',
                 }}
               >
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industrys standard dummy text
-                ever since the 1500s.
+                Estudante de Ciência da Computação <br />
+                Desenvolvedor no Instituto Alpha Lumen <br />
+                <br />
+                Estou constantemente colocando em prática meus conhecimentos e
+                sempre buscando estudar novas tecnologias.
               </Text>
             </Grid.Col>
           </Grid.Row>
@@ -79,14 +81,9 @@ export default function Home() {
           <Grid.Row marginBottom="70px">
             <HighlightedCard
               image="img/project1.png"
-              title="Título do projeto"
-              href="https://www.google.com.br"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-              vitae mollis augue, in auctor velit. Vestibulum eu consequat
-              lorem, sit amet sagittis arcu. Quisque vestibulum nulla ut metus
-              elementum convallis. Nam congue venenatis lobortis. Donec
-              gravida venenatis odio, quis luctus elit convallis ac. Integer
-              non nisi a nisi lobortis sodales. Donec id efficitur augue."
+              title="Alura Pokemon Quiz"
+              href="https://github.com/daniloamsilva/alura_pokemon_quiz"
+              description="Desenvolvido durante a Imersão React da Alura com Next.JS. Um quiz para colocar a prova seus conhecimentos sobre os monstrinhos de bolso. Este projeto foi um dos dez premiados com uma bolsa de estudos para o Bootcamp JAMStack da Alura :)."
             />
           </Grid.Row>
 
@@ -97,9 +94,9 @@ export default function Home() {
               marginBottom={{ sm: '20px' }}
             >
               <Card
-                image="img/project1.png"
-                title="Título do projeto"
-                href="https://www.google.com.br"
+                image="img/project2.png"
+                title="Instalura"
+                href="https://github.com/daniloamsilva/instalura"
               />
             </Grid.Col>
             <Grid.Col
@@ -108,9 +105,9 @@ export default function Home() {
               marginBottom={{ sm: '20px' }}
             >
               <Card
-                image="img/project1.png"
-                title="Título do projeto"
-                href="https://www.google.com.br"
+                image="img/project3.jpg"
+                title="Proffy"
+                href="https://github.com/daniloamsilva/proffy_web"
               />
             </Grid.Col>
             <Grid.Col
@@ -119,9 +116,9 @@ export default function Home() {
               marginBottom={{ sm: '20px' }}
             >
               <Card
-                image="img/project1.png"
-                title="Título do projeto"
-                href="https://www.google.com.br"
+                image="img/project4.png"
+                title="Happy"
+                href="https://github.com/daniloamsilva/happy_web"
               />
             </Grid.Col>
           </Grid.Row>
