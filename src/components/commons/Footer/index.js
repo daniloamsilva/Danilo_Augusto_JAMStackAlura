@@ -2,11 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 
 const FooterWrapper = styled.footer`
-  padding: 5px 0;
+  padding: 10px 0;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: ${({ theme }) => theme.colors.background.main.color};
+  box-shadow: 0 -5px 10px grey;
 
   a {
     color: ${({ theme }) => theme.colors.primary.main.contrastText};
@@ -30,15 +31,17 @@ export default function Footer(props) {
         href="https://github.com/daniloamsilva"
         target="_blank"
         rel="noreferrer"
+        style={{ display: 'flex' }}
       >
-        <i className="fab fa-github" />
+        <img src="img/github.svg" alt="github" width="30" />
       </a>
       <a
         href="https://www.linkedin.com/in/daniloamsilva"
         target="_blank"
         rel="noreferrer"
+        style={{ display: 'flex' }}
       >
-        <i className="fab fa-linkedin" />
+        <img src="img/linkedin.svg" alt="linkedin" width="30" />
       </a>
     </FooterWrapper>
   );

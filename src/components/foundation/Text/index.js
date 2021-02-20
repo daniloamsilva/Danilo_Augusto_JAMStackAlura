@@ -27,6 +27,8 @@ const TextBase = styled.span`
   ${propToStyle('textAlign')}
   ${propToStyle('color')}
   ${propToStyle('margin-left')}
+  ${propToStyle('border-bottom')}
+  ${propToStyle('text-decoration')}
 `;
 
 function Text({ tag, variant, color, children, ...props }) {

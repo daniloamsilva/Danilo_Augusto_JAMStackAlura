@@ -76,10 +76,11 @@ export default function Home() {
         <SectionTitle>MEUS PROJETOS</SectionTitle>
 
         <Grid.Container>
-          <Grid.Row>
+          <Grid.Row marginBottom="70px">
             <HighlightedCard
               image="img/project1.png"
               title="Título do projeto"
+              href="https://www.google.com.br"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
               vitae mollis augue, in auctor velit. Vestibulum eu consequat
               lorem, sit amet sagittis arcu. Quisque vestibulum nulla ut metus
@@ -89,38 +90,45 @@ export default function Home() {
             />
           </Grid.Row>
 
-          <Grid.Row marginTop="30px" marginBottom="30px">
+          <Grid.Row marginTop="30px" marginBottom="70px">
             <Grid.Col
               value={{ xs: 12, md: 4 }}
               padding={{ md: '0 10px' }}
               marginBottom={{ sm: '20px' }}
             >
-              <Card image="img/project1.png" title="Título do projeto" />
+              <Card
+                image="img/project1.png"
+                title="Título do projeto"
+                href="https://www.google.com.br"
+              />
             </Grid.Col>
             <Grid.Col
               value={{ xs: 12, md: 4 }}
               padding={{ md: '0 10px' }}
               marginBottom={{ sm: '20px' }}
             >
-              <Card image="img/project1.png" title="Título do projeto" />
+              <Card
+                image="img/project1.png"
+                title="Título do projeto"
+                href="https://www.google.com.br"
+              />
             </Grid.Col>
             <Grid.Col
               value={{ xs: 12, md: 4 }}
               padding={{ md: '0 10px' }}
               marginBottom={{ sm: '20px' }}
             >
-              <Card image="img/project1.png" title="Título do projeto" />
+              <Card
+                image="img/project1.png"
+                title="Título do projeto"
+                href="https://www.google.com.br"
+              />
             </Grid.Col>
           </Grid.Row>
         </Grid.Container>
       </WrapperProjects>
 
       <Footer />
-
-      <script
-        src="https://kit.fontawesome.com/8a13c7bf41.js"
-        crossOrigin="anonymous"
-      />
     </Box>
   );
 }

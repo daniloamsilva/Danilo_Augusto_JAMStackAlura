@@ -5,16 +5,19 @@ import Text from '../../foundation/Text';
 
 const links = [
   {
-    texto: 'Projetos',
+    texto: 'Meus Projetos',
     url: '/',
+    active: true,
   },
   {
     texto: 'Sobre Mim',
     url: '/about',
+    active: false,
   },
   {
     texto: 'Contatos',
     url: '/contact',
+    active: false,
   },
 ];
 
@@ -33,8 +36,10 @@ function Menu() {
             variant="paragraph2"
             color="white"
             margin-left="20px"
+            text-decoration="none"
             key={link.url}
             href={link.url}
+            border-bottom={link.active ? '2px solid white' : ''}
           >
             {link.texto}
           </Text>
